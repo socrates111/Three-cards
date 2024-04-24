@@ -1,0 +1,130 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray : hsl(0, 0%, 95%);
+
+}
+
+* ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', 'Big Shoulders Display' sans-serif;
+    height: 110vh;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    max-width: 700px;
+    min-height: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-1, .card-2, .card-3 {
+    height: 100%;
+    width: 100%;
+}
+
+.car-1, .car-2, .car-3 {
+    max-width: 20%;
+    margin-top: 35px;
+    margin-left: 35px;
+}
+
+.sed, .suv, .lux {
+    margin-left: 35px;
+    padding: 5px 5px 5px 0px;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 700;
+
+}
+
+.para-car {
+    padding-right: 35px;
+    margin-left: 35px;
+    font-size: 13px;
+    color: var(--Transparent-white);
+    font-weight: 400;
+}
+
+.card-1 {
+    background-color: var(--Bright-orange);
+
+}
+
+.card-2 {
+    background-color: var(--Dark-cyan);
+}
+
+.card-3 {
+    background-color:var(--Very-dark-cyan);
+}
+
+.btn {
+    margin-left: 35px;
+    margin-top: 4 rem;
+    border-radius: 20px;
+    overflow: hidden;
+    padding:10px;
+    width:50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sedan {
+    color:var(--Bright-orange);
+    font-weight: 700;
+}
+
+.btn-suv {
+    color: var(--Dark-cyan);
+    font-weight: 700;
+}
+
+.btn-lux {
+    color:var(--Very-dark-cyan);
+    font-weight: 700;
+}
+
+@media (max-width: 699px) {
+
+    .main {
+        margin: 50px auto;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex: 1;
+    }
+
+
+    .btn {
+        margin-bottom: 30px;
+        margin-top: 15px;
+        padding:8px;
+        width: 45%;
+    }
+
+    
+}
